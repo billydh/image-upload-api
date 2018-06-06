@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "cbc632be-cfea-4789-88c8-42eac77e8bb3",
+		"name": "Image Upload API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Query File",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/queryImage/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"queryImage",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/allImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"allImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Images",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "image",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "image",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "image",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "image",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/uploadImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"uploadImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resize Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"image\": \n\t\t{\"path\" : \"./public/uploaded_images/1528304421069_hamburger.jpg\",\n\t\t\"height\" : 400,\n\t\t\"width\" : 350\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resizeImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resizeImage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
