@@ -56,7 +56,7 @@ Below are the details on what each folder/ file does:
 - `functions` - a folder containing all user defined modules which are used in `server.js`
 - `node_modules` - a folder containing all node modules required for the application
 
-## Enables API's
+## Enabled API's
 Below is the list of available API's:
 - `/api/uploadImages` - handle single/ batch uploads of images including storing them in the server's file system and inserting the images' information into database
 - `/api/resizeImage` - handle image's resize, taking `height` and `width` from `request body` as an input
